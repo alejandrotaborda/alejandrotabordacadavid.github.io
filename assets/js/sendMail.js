@@ -6,13 +6,7 @@ $('#contactoForm').submit(function(e) {
     if (!name.value || !email.value || !message.value){
         alert('Por favor verifique que todos los campo se encuentren bien diligenciados.');
     }else{
-        $.ajax({
-            url: "https://formspree.io/alejandrotabordacadavid@gmail.com", 
-            method: "POST",
-            data: {mensaje:'hola'},
-            dataType: "json"
-        });
-        e.preventDefault();
+        e.submit();
         $(this).get(0).reset();
         alertify.success('Gracias por enviar su mensaje.');
     }
