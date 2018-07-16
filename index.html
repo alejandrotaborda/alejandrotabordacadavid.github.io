@@ -160,19 +160,19 @@
 			<!-- Contacto -->
 			<article id="Contacto">
 				<h2 class="major">Contacto</h2>
-				<form id="contactoForm">
+				<form id="contactoForm" action="POST">
 					<div class="fields">
 						<div class="field half">
 							<label for="Nombre">Nombre</label>
-							<input type="text" name="nombre" id="Nombre"  required/>
+							<input type="text" name="name" id="Nombre"  required/>
 						</div>
 						<div class="field half">
 							<label for="Correo">Correo</label>
-							<input type="email" name="correo" id="Correo"  required/>
+							<input type="email" name="_replyto" id="Correo"  required/>
 						</div>
 						<div class="field">
 							<label for="Mensaje">Mensaje</label>
-							<textarea name="mensaje" id="Mensaje" rows="4" maxlength="420" required></textarea>
+							<textarea name="message" id="Mensaje" rows="4" maxlength="420" required></textarea>
 						</div>
 					</div>
 					<ul class="actions">

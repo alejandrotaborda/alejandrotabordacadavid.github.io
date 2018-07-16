@@ -9,12 +9,12 @@ $('#contactoForm').submit(function(e) {
         $.ajax({
             url: "https://formspree.io/alejandrotabordacadavid@gmail.com", 
             method: "POST",
-            data: $(this).serialize(),
+            data: {mensaje:'hola'},
             dataType: "json"
         });
         e.preventDefault();
         $(this).get(0).reset();
-        alertify.success('Gracias por enviar si mensaje.');
+        alertify.success('Gracias por enviar su mensaje.');
     }
 
 });
